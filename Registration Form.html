@@ -18,17 +18,24 @@
     </center>
 
     <center>
+        <div style="background-color: grey;">
         <h1>Registration Form</h1>
         <form>
             <table>
                 <tr>
-                    <td>NAME :</td><td><input type="text" placeholder="Enter your Name"></td>
+                    <td>NAME :</td><td><input type="text" placeholder="Enter your Name"pattern="[A-Za-z]+" required title="Only letters are allowed"></td>
                 </tr>
                 <tr>
-                    <td>AGE :</td><td><input type="text" placeholder="Enter your Age"></td>
+                    <td>AGE :</td><td><input type="number" placeholder="Enter your Age"min="17" max="30" required></td>
                 </tr>
                 <tr>
-                    <td>EMAIL ID :</td><td><input type="text" placeholder="Enter your Email"></td>
+                    <td>EMAIL ID :</td><td><input type="text" placeholder="Enter your Email"required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$" title="Please enter a valid email address (e.g., user@example.com)"></td>
+                </tr>
+                <tr>
+                    <td>DATE OF BIRTH :</td><td><input type="date" placeholder="Enter your Date Of Birth" required></td>
+                </tr>
+                <tr>
+                    <td>PHONE NUMBER :</td><td><input type="text" placeholder="Enter your Phone Number"pattern="[0-9]{10}" required title="Phone number must be exactly 10 digits"></td>
                 </tr>
                 <tr>
                     <td>GENDER :</td><td><input type="radio">Male<input type="radio">Female</td>
@@ -49,7 +56,10 @@
                     
                 </tr> 
                 <tr>
-                    <td>JEE PERCENTAGE :</td><td><input type="text" placeholder="Enter your Percentage"></td>
+                    <td>JEE PERCENTAGE :</td><td><input type="text" placeholder="Enter your Percentage"min="50%" max="100%" required></td>
+                </tr>
+                <tr>
+                    <td>Description :</td><td><input type="text" placeholder="Write your thoughts" required></td>
                 </tr>
                 <tr>
                     <td><input type="reset"></td>
@@ -58,8 +68,9 @@
                 
             </table>
         </form>
+        </div>
     </center>
-
+    
     <hr>
     <center>
     <div style="background-color: grey;">
@@ -69,3 +80,6 @@
 
 </body>
 </html>
+
+
+
